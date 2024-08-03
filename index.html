@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; }
+        .player-list, .action-buttons, .log { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Basketball Tracker</h1>
+        <div class="player-list">
+            <h2>Players</h2>
+            <input type="text" id="playerName" placeholder="Enter player name">
+            <button onclick="addPlayer()">Add Player</button>
+            <ul id="players"></ul>
+        </div>
+        <div class="action-buttons">
+            <h2>Actions</h2>
+            <select id="playerSelect"></select>
+            <button onclick="logAction('Pass')">Pass</button>
+            <button onclick="logAction('Dribble')">Dribble</button>
+            <button onclick="logAction('Shoot')">Shoot</button>
+        </div>
+        <div class="log">
+            <h2>Log</h2>
+            <ul id="log"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
